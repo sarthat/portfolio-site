@@ -6,69 +6,87 @@
   <title>Your Name – Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container nav-content">
-      <h1 class="logo">Sartha B. Tamang</h1>
-      <ul class="nav-links">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container hero-content">
-      <h2>Hello, I'm <span class="highlight">Sartha</span></h2>
-      <p>A passionate Full Stack Developer focused on building scalable web apps and cloud-native solutions.</p>
-      <a href="#projects" class="btn">View Projects</a>
+<body class="light-mode">
+  <header class="site-header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="tagline">Full Stack Developer • Java • AWS • Microservices</p>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle">🌙</button>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="skills">
+  <main>
+    <section id="about" class="intro container fade-in">
+      <h2>Hello, I'm Sartha. 👋</h2>
+      <p>I’m a software developer with 5+ years of experience building cloud-based applications and scalable backend services using Java, Spring Boot, and AWS.</p>
+      <a href="resume.pdf" class="btn" target="_blank">📄 View Resume</a>
+    </section>
+
+    <section id="skills" class="container fade-in">
       <h2>Skills</h2>
-      <div class="grid">
-        <div class="card">Java, Scala, JavaScript, TypeScript</div>
-        <div class="card">Spring Boot, Play, Node.js</div>
-        <div class="card">AWS (Lambda, S3, EC2, Cognito)</div>
-        <div class="card">MySQL, PostgreSQL, Oracle</div>
-        <div class="card">Git, Docker, Jenkins, Kubernetes</div>
-      </div>
+      <ul class="skills-list">
+        <li>Java, Scala, TypeScript, JavaScript</li>
+        <li>Spring Boot, Play Framework, Node.js</li>
+        <li>AWS (Lambda, API Gateway, S3, Cognito)</li>
+        <li>Docker, Kubernetes, Jenkins, Git</li>
+        <li>MySQL, PostgreSQL, Oracle</li>
+      </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container fade-in">
       <h2>Projects</h2>
-      <div class="project">
+      <div class="project-card">
         <h3>French-Nepali Dictionary</h3>
-        <p>Built a bilingual online dictionary for language learners using PHP and MySQL with a responsive front end.</p>
-        <a href="https://diconepali.com" target="_blank">Visit Site →</a>
+        <p>Built a bilingual dictionary web app using PHP, MySQL, HTML/CSS. Designed for speed and usability for language learners.</p>
+        <a href="https://diconepali.com" target="_blank">View Project →</a>
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experiences</h2>
+    <section id="github" class="container fade-in">
+      <h2>GitHub Projects</h2>
+      <p>Live GitHub repositories coming soon via GitHub API integration.</p>
+    </section>
+
+    <section id="experience" class="container fade-in">
+      <h2>Experience</h2>
       <div class="job">
         <h3>Accenture – Backend Developer</h3>
-        <p>Built microservices using Spring Boot & AWS. Integrated REST APIs, Kafka, and deployed with Docker & Jenkins.</p>
+        <p>Built and deployed secure microservices using Spring Boot, Kafka, Docker, and AWS. Implemented APIs and handled CI/CD pipelines.</p>
       </div>
       <div class="job">
         <h3>Capital One – Java Developer</h3>
-        <p>Created backend microservices for loan processing. Implemented REST APIs and deployed with CI/CD pipelines.</p>
+        <p>Created RESTful microservices and backend systems for auto loan approval, integrated with third-party APIs and AWS services.</p>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="testimonials" class="container fade-in">
+      <h2>Testimonials</h2>
+      <blockquote>
+        "A highly reliable backend developer who always delivers clean, scalable code." – Former Manager
+      </blockquote>
+      <blockquote>
+        "Her AWS and microservices knowledge streamlined our entire deployment process." – Team Lead
+      </blockquote>
+    </section>
+
+    <section id="contact" class="container fade-in">
       <h2>Contact</h2>
+      <p>Have a project or opportunity in mind? Let's connect.</p>
       <p>Email: <a href="mailto:sartha.b.tamang@gmail.com">email-id</a></p>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Sartha B. Tamang</p>
+  <footer class="site-footer">
+    <p>&copy; 2025 Sartha B. Tamang. All rights reserved.</p>
   </footer>
 </body>
 </html>

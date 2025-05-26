@@ -5,55 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name – Software Developer</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <h2>Software Developer / Full Stack / Java</h2>
-    <p>Email: email-id | Phone: phone</p>
+  <header class="header">
+    <div class="container">
+      <h1>Your Name</h1>
+      <p class="subtitle">Full Stack Java Developer • Cloud • Microservices</p>
+      <p>Email: email-id | Phone: phone</p>
+    </div>
   </header>
 
-  <section class="summary">
-    <h3>Summary</h3>
-    <p>Around 5 years of experience in software development including Java, Spring Boot, AWS, REST APIs, and microservices architecture...</p>
-  </section>
+  <main class="container">
+    <section>
+      <h2>Summary</h2>
+      <p>5+ years of experience building enterprise-level web applications using Java, Spring Boot, AWS, and microservices architecture. Proficient in back-end development, cloud deployment, and CI/CD practices with a focus on performance and scalability.</p>
+    </section>
 
-  <section class="skills">
-    <h3>Technical Skills</h3>
-    <ul>
-      <li><strong>Languages:</strong> Java, Scala, Node.js, TypeScript, JavaScript</li>
-      <li><strong>Frameworks:</strong> Spring Boot, Play, Hibernate, MyBatis</li>
-      <li><strong>Cloud:</strong> AWS Lambda, EC2, S3, Cognito, API Gateway</li>
-      <li><strong>Databases:</strong> MySQL, Postgres, Oracle</li>
-      <li><strong>Tools:</strong> Git, Maven, Gradle, Jenkins, Docker, Kubernetes</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Languages:</strong> Java, Scala, Node.js, TypeScript, JavaScript</div>
+        <div><strong>Frameworks:</strong> Spring Boot, Play, Hibernate, MyBatis</div>
+        <div><strong>Cloud:</strong> AWS Lambda, EC2, S3, Cognito, API Gateway</div>
+        <div><strong>Databases:</strong> MySQL, Postgres, Oracle</div>
+        <div><strong>Tools:</strong> Git, Maven, Gradle, Jenkins, Docker, Kubernetes</div>
+      </div>
+    </section>
 
-  <section class="projects">
-    <h3>Projects</h3>
-    <h4>French-Nepali Dictionary – <a href="https://diconepali.com" target="_blank">diconepali.com</a></h4>
-    <p>Bilingual French-Nepali dictionary using PHP and MySQL. Responsive frontend with HTML/CSS. Hosted on Apache.</p>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <article>
+        <h3>French-Nepali Dictionary – <a href="https://diconepali.com" target="_blank">diconepali.com</a></h3>
+        <p>Developed a bilingual dictionary platform using HTML, CSS, PHP, and MySQL. Responsive, fast, and user-focused design tailored for language learners and travelers.</p>
+      </article>
+    </section>
 
-  <section class="experience">
-    <h3>Experience</h3>
-    <h4>Accenture – Backend Developer</h4>
-    <ul>
-      <li>Built secure microservices using Spring Boot and Play</li>
-      <li>Integrated AWS services: Lambda, S3, API Gateway, Cognito</li>
-      <li>Used Kafka, Redis, Jenkins, and Docker for scalable deployments</li>
-    </ul>
-    
-    <h4>Capital One – Java Developer</h4>
-    <ul>
-      <li>Developed Spring Boot microservices with REST APIs</li>
-      <li>Containerized deployments via Jenkins and Docker</li>
-      <li>Used Postgres, JUnit, Mockito, Git</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Work Experience</h2>
+      <article>
+        <h3>Accenture – Backend Developer</h3>
+        <ul>
+          <li>Developed secure, scalable microservices using Spring Boot and Play Framework.</li>
+          <li>Implemented AWS services: Lambda, Cognito, S3, API Gateway, and EC2.</li>
+          <li>Maintained high performance through Kafka, Redis, and Dockerized deployments.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Capital One – Java Developer</h3>
+        <ul>
+          <li>Built REST APIs for microservices with Spring Boot and integrated with AWS CI/CD pipelines.</li>
+          <li>Utilized Hibernate for DB interaction and Docker for containerization.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2025 Your Name | <a href="mailto:email-id">email-id</a></p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Your Name | <a href="mailto:email-id">email-id</a></p>
+    </div>
   </footer>
 </body>
 </html>

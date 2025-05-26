@@ -2,69 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name – Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name – Software Engineer</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1>Your Name</h1>
-      <p class="subtitle">Full Stack Java Developer • Cloud • Microservices</p>
-      <p>Email: email-id | Phone: phone</p>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">Sartha B. Tamang</h1>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-content">
+      <h2>Hello, I'm <span class="highlight">Sartha</span></h2>
+      <p>A passionate Full Stack Developer focused on building scalable web apps and cloud-native solutions.</p>
+      <a href="#projects" class="btn">View Projects</a>
     </div>
   </header>
 
   <main class="container">
-    <section>
-      <h2>Summary</h2>
-      <p>5+ years of experience building enterprise-level web applications using Java, Spring Boot, AWS, and microservices architecture. Proficient in back-end development, cloud deployment, and CI/CD practices with a focus on performance and scalability.</p>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div><strong>Languages:</strong> Java, Scala, Node.js, TypeScript, JavaScript</div>
-        <div><strong>Frameworks:</strong> Spring Boot, Play, Hibernate, MyBatis</div>
-        <div><strong>Cloud:</strong> AWS Lambda, EC2, S3, Cognito, API Gateway</div>
-        <div><strong>Databases:</strong> MySQL, Postgres, Oracle</div>
-        <div><strong>Tools:</strong> Git, Maven, Gradle, Jenkins, Docker, Kubernetes</div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">Java, Scala, JavaScript, TypeScript</div>
+        <div class="card">Spring Boot, Play, Node.js</div>
+        <div class="card">AWS (Lambda, S3, EC2, Cognito)</div>
+        <div class="card">MySQL, PostgreSQL, Oracle</div>
+        <div class="card">Git, Docker, Jenkins, Kubernetes</div>
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
-      <article>
-        <h3>French-Nepali Dictionary – <a href="https://diconepali.com" target="_blank">diconepali.com</a></h3>
-        <p>Developed a bilingual dictionary platform using HTML, CSS, PHP, and MySQL. Responsive, fast, and user-focused design tailored for language learners and travelers.</p>
-      </article>
+      <div class="project">
+        <h3>French-Nepali Dictionary</h3>
+        <p>Built a bilingual online dictionary for language learners using PHP and MySQL with a responsive front end.</p>
+        <a href="https://diconepali.com" target="_blank">Visit Site →</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Work Experience</h2>
-      <article>
+    <section id="experience">
+      <h2>Experiences</h2>
+      <div class="job">
         <h3>Accenture – Backend Developer</h3>
-        <ul>
-          <li>Developed secure, scalable microservices using Spring Boot and Play Framework.</li>
-          <li>Implemented AWS services: Lambda, Cognito, S3, API Gateway, and EC2.</li>
-          <li>Maintained high performance through Kafka, Redis, and Dockerized deployments.</li>
-        </ul>
-      </article>
-      <article>
+        <p>Built microservices using Spring Boot & AWS. Integrated REST APIs, Kafka, and deployed with Docker & Jenkins.</p>
+      </div>
+      <div class="job">
         <h3>Capital One – Java Developer</h3>
-        <ul>
-          <li>Built REST APIs for microservices with Spring Boot and integrated with AWS CI/CD pipelines.</li>
-          <li>Utilized Hibernate for DB interaction and Docker for containerization.</li>
-        </ul>
-      </article>
+        <p>Created backend microservices for loan processing. Implemented REST APIs and deployed with CI/CD pipelines.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sartha.b.tamang@gmail.com">email-id</a></p>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Your Name | <a href="mailto:email-id">email-id</a></p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Sartha B. Tamang</p>
   </footer>
 </body>
 </html>

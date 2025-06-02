@@ -2,91 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sartha B. Tamang – Software Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-mode">
-  <header class="site-header">
+<body class="bg-light text-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <h1>Sartha B. Tamang</h1>
-      <p class="tagline">Full Stack Developer • Java • AWS • Microservices</p>
-      <nav class="site-nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-        <button id="theme-toggle">🌙</button>
-      </nav>
+      <a class="navbar-brand" href="#">Sartha B. Tamang</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-4">Hi, I'm Sartha B. Tamang</h1>
+      <p class="lead">Software Engineer • Full Stack Developer • Cloud Enthusiast</p>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="intro container fade-in">
-      <h2>Hello, I'm Sartha. 👋</h2>
-      <p>I’m a software developer with 5+ years of experience building cloud-based applications and scalable backend services using Java, Spring Boot, and AWS.</p>
-      <a href="resume.pdf" class="btn" target="_blank">📄 View Resume</a>
-    </section>
-
-    <section id="skills" class="container fade-in">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Java, Scala, TypeScript, JavaScript</li>
-        <li>Spring Boot, Play Framework, Node.js</li>
-        <li>AWS (Lambda, API Gateway, S3, Cognito)</li>
-        <li>Docker, Kubernetes, Jenkins, Git</li>
-        <li>MySQL, PostgreSQL, Oracle</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="container fade-in">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>French-Nepali Dictionary</h3>
-        <p>Built a bilingual dictionary web app using PHP, MySQL, HTML/CSS. Designed for speed and usability for language learners.</p>
-        <a href="https://diconepali.com" target="_blank">View Project →</a>
+  <section id="skills" class="container py-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Programming Languages</h5>
+        <ul>
+          <li>Java, Scala, JavaScript, TypeScript, PHP</li>
+        </ul>
+        <h5>Frameworks & Libraries</h5>
+        <ul>
+          <li>Spring Boot, Play, React, Node.js, Hibernate</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="github" class="container fade-in">
-      <h2>GitHub Projects</h2>
-      <p>Live GitHub repositories coming soon via GitHub API integration.</p>
-    </section>
-
-    <section id="experience" class="container fade-in">
-      <h2>Experience</h2>
-      <div class="job">
-        <h3>Accenture – Backend Developer</h3>
-        <p>Built and deployed secure microservices using Spring Boot, Kafka, Docker, and AWS. Implemented APIs and handled CI/CD pipelines.</p>
+      <div class="col-md-6">
+        <h5>Technologies</h5>
+        <ul>
+          <li>AWS (Lambda, S3, EC2, Cognito), Kafka, Docker, Kubernetes</li>
+        </ul>
+        <h5>Programs & Tools</h5>
+        <ul>
+          <li>Git, Maven, Gradle, Jenkins, VS Code, IntelliJ</li>
+        </ul>
       </div>
-      <div class="job">
-        <h3>Capital One – Java Developer</h3>
-        <p>Created RESTful microservices and backend systems for auto loan approval, integrated with third-party APIs and AWS services.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="testimonials" class="container fade-in">
-      <h2>Testimonials</h2>
-      <blockquote>
-        "A highly reliable backend developer who always delivers clean, scalable code." – Former Manager
-      </blockquote>
-      <blockquote>
-        "Her AWS and microservices knowledge streamlined our entire deployment process." – Team Lead
-      </blockquote>
-    </section>
+  <section id="projects" class="container py-5">
+    <h2 class="text-center mb-4">Work Experience & Projects</h2>
+    <div class="mb-4">
+      <h4>Accenture</h4>
+      <p>Contributed backend services using Spring Boot, AWS, and Kafka for a large-scale healthcare platform.</p>
+    </div>
+    <div class="mb-4">
+      <h4>Capital One</h4>
+      <p>Built scalable microservices for auto loan approval workflows, integrated with banking APIs and CI/CD pipelines.</p>
+    </div>
+    <div class="mb-4">
+      <h4>Personal Project - French-Nepali Dictionary</h4>
+      <p>Developed a bilingual online dictionary for learners using PHP and MySQL, deployed on an Apache server.</p>
+      <a href="https://diconepali.com" target="_blank">Visit Project</a>
+    </div>
+  </section>
 
-    <section id="contact" class="container fade-in">
-      <h2>Contact</h2>
-      <p>Have a project or opportunity in mind? Let's connect.</p>
-      <p>Email: <a href="mailto:sartha.b.tamang@gmail.com">email-id</a></p>
-    </section>
-  </main>
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+      <div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Your Name" required></div>
+      <div class="col-md-6"><input type="email" class="form-control" name="_replyto" placeholder="Your Email" required></div>
+      <div class="col-12"><textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea></div>
+      <div class="col-12 text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+    </form>
+    <div class="text-center mt-4">
+      <p>Email: <a href="mailto:email-id">email-id</a></p>
+      <p><a href="https://calendly.com/yourname" target="_blank">Book a Call on Calendly</a></p>
+      <p>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+      </p>
+    </div>
+  </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Sartha B. Tamang. All rights reserved.</p>
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2025 Sartha B. Tamang</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
